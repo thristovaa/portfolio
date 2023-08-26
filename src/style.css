@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color: #E7DDFF;
+    --darker-color: #BCA4E3;
+}
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+.primary-color-text{
+    color: var(--primary-color);
+}
+
+.darker-color-text{
+    color: var(--darker-color);
+}
+
+.primary-color-bg{
+    background-color: var(--primary-color);
+}
+
+.darker-color-bg{
+    background-color: var(--darker-color);
+}
+
+.font{
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu-devider-bg{
+    background-image: url('/menu_wave_new.svg');
+}
+
+.tr-wave{
+    background-image: url('../public/transparent_wave.svg');
+}
+
+.skills:hover{
+    box-shadow: 0 0 10px 5px var(--darker-color);
+}
+
+/*buttons*/
+
+.primary-button{
+    border: var(--primary-color) 2px solid;
+}
+
+.primary-button:hover{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.secondary-button{
+    border: var(--primary-color) 2px solid;
+}
+
+.secondary-button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/*buttons*/
+
+/*keyframes*/
+
+@keyframes animate{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 100vw;
+    }
+}
+
+/*keyframes*/
+
+/*animations and effects*/
+
+.animate{
+    animation: animate 10s linear infinite;
+}
+
+.text-shadow-glow{
+    text-shadow: 0 0 10px var(--darker-color),
+                 0 0 20px var(--darker-color),
+                 0 0 40px var(--darker-color),
+                 0 0 80px var(--darker-color),
+                 0 0 160px var(--darker-color);
+}
+
+/*animations and effects*/
