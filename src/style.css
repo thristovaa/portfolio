@@ -69,6 +69,11 @@ body{
     color: white;
 }
 
+.scrolled{
+    background: radial-gradient(circle, rgba(231,221,255,1) 0%, rgba(255,255,255,1) 100%) !important;
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.5);
+}
+
 /*buttons*/
 
 /*keyframes*/
@@ -98,4 +103,24 @@ body{
                  0 0 160px var(--darker-color);
 }
 
+.menu-item:hover{
+    text-shadow: 0 0 10px var(--darker-color),
+                 0 0 20px var(--darker-color),
+                 0 0 40px var(--darker-color),
+                 0 0 80px var(--darker-color),
+                 0 0 160px var(--darker-color);
+}
+
 /*animations and effects*/
+
+  .button:hover .icon{
+    background: var(--darker-color);
+  }
+
+  .button:hover .icon i{
+    color: #fff;
+  }
+
+  .button span{
+    color: var(--darker-color);
+  }

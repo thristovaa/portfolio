@@ -43,7 +43,9 @@ export default{
 
 <template>
     <Menu/>
-    <section class="py-16">
+
+    <!--Hero-->
+    <section class="pt-32 pb-16" id="home">
         <div class="container flex flex-wrap items-center justify-center mx-auto my-10 md:px-16 md:flex-row">
             <div class="mb-14 lg:mb-0 lg:w-1/2">
                 <h1 class="!text-[3.5rem] darker-color-text leading-none font-extrabold text-center lg:text-5xl lg:text-left lg:leading-tight mb-5">
@@ -53,8 +55,8 @@ export default{
                     I specialize in creating engaging user-friendly digital experiences that blend aesthetics with functionality.
                 </p>
                 <div class="flex justify-center gap-3 mt-14 lg:justify-start">
-                    <button type='button' class='text-white font-bold rounded-[50px] primary-color-bg px-5 py-4 primary-button transition duration-300 ease-in-out'>Primary button</button>
-                    <button type='button' class='font-bold rounded-[50px] px-5 py-4 primary-color-text text-center secondary-button transition duration-300 ease-in-out'>Secondary button</button>
+                    <button type='button' class='text-white font-bold rounded-[50px] primary-color-bg px-5 py-4 primary-button transition duration-300 ease-in-out'>Download CV</button>
+                    <button type='button' class='font-bold rounded-[50px] px-5 py-4 primary-color-text text-center secondary-button transition duration-300 ease-in-out'>Projects</button>
                 </div>
             </div>
             <div class='lg:w-1/2 flex justify-center'>
@@ -63,7 +65,8 @@ export default{
         </div>
     </section>
 
-    <Devider class="rotate-180"/>
+    <!--About me-->
+    <Devider class="rotate-180" id="about"/>
     <section class="primary-color-bg py-12">
         <div class="container flex flex-wrap items-center justify-center mx-auto my-10 md:px-16 md:flex-row">
             <div class='lg:w-1/2 flex justify-center'>
@@ -77,14 +80,14 @@ export default{
                     I specialize in creating engaging user-friendly digital experiences that blend aesthetics with functionality.
                 </p>
                 <div class="flex justify-center gap-3 mt-14 lg:justify-start">
-                    <button type='button' class='text-white font-bold rounded-[50px] primary-color-bg px-5 py-4 primary-button transition duration-300 ease-in-out'>Primary button</button>
-                    <button type='button' class='font-bold rounded-[50px] px-5 py-4 primary-color-text text-center secondary-button transition duration-300 ease-in-out'>Secondary button</button>
+                    <button type='button' class='text-white font-bold rounded-[50px] primary-color-bg px-5 py-4 primary-button transition duration-300 ease-in-out'>Socials</button>
                 </div>
             </div>
         </div>
     </section>
-    <Devider/>
+    <Devider id="skills"/>
 
+    <!--Skills-->
     <section class="py-16">
         <div class="container mx-auto">
             <h2 class="!text-[3rem] mb-3 text-center font-extrabold text-white text-shadow-glow">Skills</h2>
@@ -99,14 +102,58 @@ export default{
         </div>
     </section>
 
-    <Devider class="rotate-180"/>
-    <section class="primary-color-bg py-12">
+    <!--Projects-->
+    <Devider class="rotate-180" id="projects"/>
+    <section class="primary-color-bg py-12 px-6 md:px-0">
         <div class="container mx-auto">
             <h2 class="!text-[3rem] mb-10 text-center font-extrabold text-white text-shadow-glow">Projects</h2>
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <Projects v-for="item in projects" :link="item.link" :name="item.name" :photo="item.photo"/>
             </div>
         </div>
     </section>
-    <Devider/>
+    <Devider id="achievements"/>
+
+    <!--Achievements-->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="!text-[3rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Achievements</h2>
+            
+        </div>
+    </section>
+
+    <!--Footer-->
+    <Devider class="rotate-180 animate"/>
+    <section class="primary-color-bg py-12 px-6 md:px-0">
+        <div class="container flex flex-wrap items-center justify-center mx-auto my-10 md:px-16 md:flex-row">
+            <div class="mb-14 lg:mb-0 lg:w-1/2">
+                
+                    <!--component-->
+                    <div class="flex justify-start items-center gap-5">
+                        <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
+                           <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
+                              <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-facebook-f"></i>
+                           </div>
+                           <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Facebook</span>
+                        </div>
+                        <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
+                           <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
+                              <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-github"></i>
+                           </div>
+                           <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Github</span>
+                        </div>
+                        <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
+                           <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
+                              <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-linkedin-in"></i>
+                           </div>
+                           <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Linkedin</span>
+                        </div>
+                    <!--component-->
+                </div>
+            </div>
+            <div class='lg:w-1/2 flex justify-center'>
+                Random
+            </div>
+        </div>
+    </section>
 </template>
