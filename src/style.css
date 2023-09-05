@@ -25,12 +25,28 @@ body{
     color: var(--darker-color);
 }
 
+.primary-color-text-hover:hover{
+    color: var(--primary-color);
+}
+
+.darker-color-text-hover:hover{
+    color: var(--darker-color);
+}
+
 .primary-color-bg{
     background-color: var(--primary-color);
 }
 
 .darker-color-bg{
     background-color: var(--darker-color);
+}
+
+.border-b-primary:hover{
+    border-bottom: var(--primary-color) 2px solid !important;
+}
+
+.border-b-darker{
+    border-bottom: var(--darker-color) 2px solid !important;
 }
 
 .font{
@@ -47,6 +63,22 @@ body{
 
 .skills:hover{
     box-shadow: 0 0 10px 5px var(--darker-color);
+}
+
+.scrolled{
+    background: radial-gradient(circle, rgba(231,221,255,1) 0%, rgba(255,255,255,1) 100%) !important;
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.5);
+}
+
+.glassmorphism{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.card-gradient{
+    background-image: linear-gradient(0deg , white, #ffad99);
+    transform: skew(19deg, -9deg);
 }
 
 /*buttons*/
@@ -67,11 +99,6 @@ body{
 .secondary-button:hover{
     background-color: var(--primary-color);
     color: white;
-}
-
-.scrolled{
-    background: radial-gradient(circle, rgba(231,221,255,1) 0%, rgba(255,255,255,1) 100%) !important;
-    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.5);
 }
 
 /*buttons*/
@@ -124,3 +151,91 @@ body{
   .button span{
     color: var(--darker-color);
   }
+
+/*border effect*/
+
+.border-effect{
+    transition: box-shadow 0.3s;
+    z-index: 1;
+}
+
+.border-effect:before{
+    content: "";
+    background-image: conic-gradient(
+        var(--darker-color) 20deg,
+        transparent 120deg
+    );
+    height: 200%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -50%;
+    animation: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.border-effect .background-layer {
+    position: absolute;
+    width: 98%;
+    top: 1%;
+    left: 1%;
+    height: 98%;
+    background-color: white;
+    opacity: 0;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.border-effect:hover:before{
+    opacity: 1;
+    animation: rotate 2s infinite linear;
+}
+
+.border-effect .background-layer{
+    opacity: 1;
+}
+
+/*border effect*/
+
+/*underline effect*/
+
+span.underline-effect {
+    display: inline-block;
+    position: relative;
+}
+
+span.underline-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+span.underline-effect {
+    overflow: hidden;
+}
+
+span.underline-effect::after {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+span.underline-effect:hover::after,
+span.underline-effect:focus::after{
+    transform: translate3d(0, 0, 0);
+}
+
+/*undeline effect*/

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "circle-progress.vue": "^3.0.3",
+    "cursor-effects": "^1.0.12",
     "flowbite": "^1.8.1",
     "vue": "^3.3.4",
     "vue3-circle-progress": "^1.0.7",

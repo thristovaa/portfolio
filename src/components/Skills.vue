@@ -27,7 +27,7 @@ export default{
 </script>
 
 <template>
-    <div class="flex flex-col items-center justify-center gap-10 bg-gray-50 pt-6 pb-10 px-5 rounded-full tr-wave bg-contain bg-no-repeat bg-bottom grayscale hover:filter-none transition duration-500 ease-in-out skills">
+    <div class="flex flex-col items-center justify-center gap-10 bg-gray-50 pt-6 pb-10 px-5 rounded-full glassmorphism tr-wave bg-contain bg-no-repeat bg-bottom grayscale hover:filter-none transition duration-500 ease-in-out skills">
         <CircleProgressBar :value="receivedPercentage" :colorUnfilled="'#BCA4E3'" :colorFilled="'#BCA4E3'" :max="100" :cx="146" :cy="146" class="bg-gray-200 rounded-full">
             <img :src="'/logos/' + receivedPhoto " class="p-4" style="width: 90px;" alt="HTML">
         </CircleProgressBar>

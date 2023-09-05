@@ -3,6 +3,7 @@ import Menu from './components/Menu.vue';
 import Devider from './components/Devider.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
+import Achievements from './components/Achievements.vue';
 import {initFlowbite} from 'flowbite';
 
 export default{
@@ -10,7 +11,7 @@ export default{
         initFlowbite()
     },
     components: {
-        Menu, Devider, Skills, Projects
+        Menu, Devider, Skills, Projects, Achievements
     },
     data(){
         return{
@@ -34,9 +35,27 @@ export default{
                 { name: "Fisica nel Cielo", link: "physics.studiometafora.com", photo: "physics.png" },
                 { name: "Sunset Diary", link: "diary.studiometafora.com", photo: "diary.png" },
                 { name: "Talent Factory", link: "talentfactory.studiometafora.com", photo: "talentfactory.png" }
+            ],
+            achievements:[
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "dd/mm/20" },
+                { name: "Mathematics & Projecting (Online)", project: "Math Manual", stage: "International", place: "First", location: "Moscow, Russia", date: "dd/mm/20" },
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Fisica nel Cielo", stage: "National", place: "Special price", location: "Stara Zagora, Bulgaria", date: "04-06/06/21" },
+                { name: "Mathematics & Projecting (Online)", project: "Fisica nel Cielo", stage: "International", place: "First", location: "Moscow, Russia", date: "18/05/21" },
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Sunset Diary", stage: "National", place: "First", location: "Stara Zagora, Bulgaria", date: "11-13/03/22" },
+                { name: "Mathematics & Projecting (Online)", project: "Sunset Diary", stage: "International", place: "Second", location: "Moscow, Russia", date: "19/05/22" },
+                { name: "Competition for IT, Informatics and Digital Arts (Frontend Development category)", project: "Assignment", stage: "National", place: "13th/53", location: "Devin, Bulgaria", date: "02-04/06/23" }
             ]
         }
-    }
+    },
+    metaInfo: {
+        title: 'Raya Hristova | Portfolio',
+        meta: [
+            {
+                name: 'Raya Hristova | Portfolio',
+                content: "Hi! I'm Raya Hristova - Frontend Developer. I specialize in creating engaging user-friendly digital experiences that blend aesthetics with functionality. ",
+            }
+        ],
+    },
 }
 
 </script>
@@ -56,7 +75,7 @@ export default{
                 </p>
                 <div class="flex justify-center gap-3 mt-14 lg:justify-start">
                     <button type='button' class='text-white font-bold rounded-[50px] primary-color-bg px-5 py-4 primary-button transition duration-300 ease-in-out'>Download CV</button>
-                    <button type='button' class='font-bold rounded-[50px] px-5 py-4 primary-color-text text-center secondary-button transition duration-300 ease-in-out'>Projects</button>
+                    <button type='button' @click="scrollToSection('projects')" class='font-bold rounded-[50px] px-5 py-4 primary-color-text text-center secondary-button transition duration-300 ease-in-out'>Projects</button>
                 </div>
             </div>
             <div class='lg:w-1/2 flex justify-center'>
@@ -116,9 +135,30 @@ export default{
 
     <!--Achievements-->
     <section class="py-16">
-        <div class="container mx-auto">
+        <div class="container max-w-7xl mx-auto">
             <h2 class="!text-[3rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Achievements</h2>
-            
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-darker border-b-primary rounded-t-lg darker-color-text !primary-color-text-hover transition-all duration-300 ease-in-out" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Achievements</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button class="inline-block p-4 border-b-darker border-b-primary rounded-t-lg darker-color-text !primary-color-text-hover transition-all duration-300 ease-in-out" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Certificates</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="myTabContent">
+                <div class="hidden rounded-[50px]" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class='md:min-w-[60vw] py-8'>
+                        <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
+                            <Achievements v-for="item in achievements" :name="item.name" :stage="item.stage" :project="item.project" :place="item.place" :location="item.location" :date="item.date"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <p class="text-sm">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                </div>
+            </div>
         </div>
     </section>
 
