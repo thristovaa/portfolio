@@ -1,5 +1,5 @@
 <template>
-  <nav :class="['w-[100vw] fixed z-20 bg-cover bg-center h-[7rem] menu-devider-bg transition-all duration-500 ease-in-out animate', { 'scrolled': isScrolled }]" id="scrolled">
+  <nav :class="['w-[100vw] fixed z-20 bg-cover bg-center h-[7rem] menu-devider-bg hidden md:flex md:justify-center transition-all duration-500 ease-in-out animate', { 'scrolled': isScrolled }]" id="scrolled">
     <ul class="flex items-center justify-center h-full">
       <li class="mx-4">
         <a @click="scrollToSection('home')" class="cursor-pointer darker-color-text font-extrabold menu-item transition-all duration-300 ease-in-out text-[18px] hover:text-white">Home</a>
