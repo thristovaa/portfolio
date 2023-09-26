@@ -37,14 +37,14 @@ export default{
                 { name: "Talent Factory", link: "talentfactory.studiometafora.com", photo: "talentfactory.png" }
             ],
             achievements:[
-                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "dd/mm/20" },
-                { name: "Mathematics & Projecting (Online)", project: "Math Manual", stage: "International", place: "First", location: "Moscow, Russia", date: "dd/mm/20" },
-                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Fisica nel Cielo", stage: "National", place: "Special price", location: "Stara Zagora, Bulgaria", date: "04-06/06/21" },
-                { name: "Mathematics & Projecting (Online)", project: "Fisica nel Cielo", stage: "International", place: "First", location: "Moscow, Russia", date: "18/05/21" },
-                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Sunset Diary", stage: "National", place: "First", location: "Stara Zagora, Bulgaria", date: "11-13/03/22" },
-                { name: "Mathematics & Projecting (Online)", project: "Sunset Diary", stage: "International", place: "Second", location: "Moscow, Russia", date: "19/05/22" },
-                { name: "Certificate of Recognition from Baba Tonka High School of Mathematics", project: "-", stage: "-", place: "-", location: "Ruse, Bulgaria", date: "22/03/22" },
-                { name: "Competition for IT, Informatics and Digital Arts (Frontend Development category)", project: "Assignment", stage: "National", place: "13th/53", location: "Devin, Bulgaria", date: "02-04/06/23" }
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "14-02-20" },
+                { name: "Mathematics & Projecting (Online)", project: "Math Manual", stage: "International", place: "First", location: "Moscow, Russia", date: "18-05-20" },
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Fisica nel Cielo", stage: "National", place: "Special price", location: "Stara Zagora, Bulgaria", date: "05-06-21" },
+                { name: "Mathematics & Projecting (Online)", project: "Fisica nel Cielo", stage: "International", place: "First", location: "Moscow, Russia", date: "18-05-21" },
+                { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Sunset Diary", stage: "National", place: "First", location: "Stara Zagora, Bulgaria", date: "12-03-22" },
+                { name: "Mathematics & Projecting (Online)", project: "Sunset Diary", stage: "International", place: "Second", location: "Moscow, Russia", date: "19-05-22" },
+                { name: "Certificate of Recognition from Baba Tonka High School of Mathematics", project: "-", stage: "-", place: "-", location: "Ruse, Bulgaria", date: "22-03-22" },
+                { name: "Competition for IT, Informatics and Digital Arts (Frontend Development category)", project: "Assignment", stage: "National", place: "13th/53", location: "Devin, Bulgaria", date: "03-06-23" }
             ]
         }
     },
