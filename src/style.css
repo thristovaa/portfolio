@@ -154,53 +154,56 @@ body{
 
 /*border effect*/
 
-.border-effect{
-    transition: box-shadow 0.3s;
-    z-index: 1;
-}
-
-.border-effect:before{
-    content: "";
-    background-image: conic-gradient(
-        var(--darker-color) 20deg,
-        transparent 120deg
-    );
-    height: 200%;
-    width: 150%;
-    position: absolute;
-    left: -25%;
-    top: -50%;
-    animation: none;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: -1;
-}
-
-@keyframes rotate{
-    100%{
-        transform: rotate(-360deg);
+@media (min-width: 768px) {
+    .border-effect{
+        transition: box-shadow 0.3s;
+        z-index: 1;
     }
-}
 
-.border-effect .background-layer {
-    position: absolute;
-    width: 98%;
-    top: 1%;
-    left: 1%;
-    height: 98%;
-    background-color: white;
-    opacity: 0;
-    z-index: 0;
-    border-radius: 50px;
-}
+    .border-effect:before{
+        content: "";
+        background-image: conic-gradient(
+            var(--darker-color) 20deg,
+            transparent 120deg
+        );
+        height: 200%;
+        width: 150%;
+        position: absolute;
+        left: -25%;
+        top: -50%;
+        animation: none;
+        opacity: 0;
+        display: block;
+        transition: opacity 0.3s;
+        z-index: -1;
+    }
 
-.border-effect:hover:before{
-    opacity: 1;
-    animation: rotate 2s infinite linear;
-}
+    @keyframes rotate{
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
 
-.border-effect .background-layer{
-    opacity: 1;
+    .border-effect .background-layer {
+        position: absolute;
+        width: 98%;
+        top: 1%;
+        left: 1%;
+        height: 98%;
+        background-color: white;
+        opacity: 0;
+        z-index: 0;
+        border-radius: 50px;
+    }
+
+    .border-effect:hover:before{
+        opacity: 1;
+        animation: rotate 2s infinite linear;
+    }
+
+    .border-effect .background-layer{
+        opacity: 1;
+    }
 }
 
 /*border effect*/
