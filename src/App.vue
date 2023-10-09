@@ -34,7 +34,8 @@ export default{
                 { name: "Math Manual", link: "math.studiometafora.com", photo: "math.png" },
                 { name: "Fisica nel Cielo", link: "physics.studiometafora.com", photo: "physics.png" },
                 { name: "Sunset Diary", link: "diary.studiometafora.com", photo: "diary.png" },
-                { name: "Talent Factory", link: "talentfactory.studiometafora.com", photo: "talentfactory.png" }
+                { name: "Talent Factory", link: "talentfactory.studiometafora.com", photo: "talentfactory.png" },
+                { name: "Брат, не можеш...", link: "bratnemozhesh.studiometafora.com", photo: "bratnemozhesh.png" }
             ],
             achievements:[
                 { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "14-02-20" },
