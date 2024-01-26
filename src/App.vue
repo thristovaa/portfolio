@@ -28,14 +28,21 @@ export default{
                 { name: "Bootstrap", percentage: "70", photo: "Bootstrap.png" },
                 { name: "React", percentage: "50", photo: "React.webp" },
                 { name: "Vue", percentage: "50", photo: "Vue.png" },
+                { name: "Wordpress", percentage: "80", photo: "Wordpress.png" },
             ],
             projects:[
-                { name: "Тheatrical Тroupe 'Metafora'", link: "studiometafora.com", photo: "studiometafora.png" },
-                { name: "Math Manual", link: "math.studiometafora.com", photo: "math.png" },
-                { name: "Fisica nel Cielo", link: "physics.studiometafora.com", photo: "physics.png" },
-                { name: "Sunset Diary", link: "diary.studiometafora.com", photo: "diary.png" },
-                { name: "Talent Factory", link: "talentfactory.studiometafora.com", photo: "talentfactory.png" },
-                { name: "Брат, не можеш...", link: "bratnemozhesh.studiometafora.com", photo: "bratnemozhesh.png" }
+                { name: "Тheatrical Тroupe 'Metafora'", link: "https://studiometafora.com", photo: "studiometafora.png" },
+                { name: "Math Manual", link: "https://math.studiometafora.com", photo: "math.png" },
+                { name: "Fisica nel Cielo", link: "https://physics.studiometafora.com", photo: "physics.png" },
+                { name: "Sunset Diary", link: "https://diary.studiometafora.com", photo: "diary.png" },
+                { name: "Talent Factory", link: "https://talentfactory.studiometafora.com", photo: "talentfactory.png" },
+                { name: "Брат, не можеш...", link: "https://bratnemozhesh.studiometafora.com", photo: "bratnemozhesh.png" }
+            ],
+            wordpressProjects:[
+                { name: "Auditing", link: "https://auditingbg.com/", photo: "Auditing.png" },
+                { name: "Consult Intellect'", link: "https://consult-intellect.com/", photo: "ConsultIntellect.png" },
+                { name: "KrisArt Wedding", link: "https://krisartwedding.com/", photo: "KrisArt.png" },
+                { name: "Cteca", link: "https://cteca-sarl.com/", photo: "Cteca.png" },
             ],
             achievements:[
                 { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "14-02-20" },
@@ -127,8 +134,13 @@ export default{
     <section class="primary-color-bg py-6 md:py-12 px-6 md:px-0">
         <div class="container mx-auto">
             <h2 class="!text-[2.5rem] md:!text-[3rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h3 class="!text-[2rem] md:!text-[2.5rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Web Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <Projects v-for="item in projects" :link="item.link" :name="item.name" :photo="item.photo"/>
+            </div>
+            <h3 class="!text-[2rem] md:!text-[2.5rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Wordpress Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <Projects v-for="item in wordpressProjects" :link="item.link" :name="item.name" :photo="item.photo"/>
             </div>
         </div>
     </section>

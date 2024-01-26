@@ -6,7 +6,7 @@
             name: String
         },
         computed: {
-            receivedPhoto() {
+            receivedPhoto() {8 
                 return this.photo;
             },
             receivedLink() {
@@ -25,7 +25,7 @@
         <div class="p-6 flex justify-between items-center">
             <h4 class="!text-[1.2rem] darker-color-text font-bold">{{ receivedName }}</h4>
             <div class="primary-color-bg p-3 flex items-center justify-center rounded-full skills transition duration-300 ease-in-out">
-                <a class="p-0 m-0 !max-h-[20px]" :href="receivedLink">
+                <a class="p-0 m-0 !max-h-[20px]" :href="receivedLink" target="_blank">
                     <ion-icon name="chevron-forward-outline" style="color: #fff; min-height:2vh; font-size:20px"></ion-icon>
                 </a>
             </div>
