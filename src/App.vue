@@ -36,13 +36,14 @@ export default{
                 { name: "Fisica nel Cielo", link: "https://physics.studiometafora.com", photo: "physics.png" },
                 { name: "Sunset Diary", link: "https://diary.studiometafora.com", photo: "diary.png" },
                 { name: "Talent Factory", link: "https://talentfactory.studiometafora.com", photo: "talentfactory.png" },
-                { name: "Брат, не можеш...", link: "https://bratnemozhesh.studiometafora.com", photo: "bratnemozhesh.png" }
+                { name: "Брат, не можеш...", link: "https://bratnemozhesh.rayahristova.dev", photo: "bratnemozhesh.png" }
             ],
             wordpressProjects:[
                 { name: "Auditing", link: "https://auditingbg.com/", photo: "Auditing.png" },
                 { name: "Consult Intellect'", link: "https://consult-intellect.com/", photo: "ConsultIntellect.png" },
                 { name: "KrisArt Wedding", link: "https://krisartwedding.com/", photo: "KrisArt.png" },
                 { name: "Cteca", link: "https://cteca-sarl.com/", photo: "Cteca.png" },
+                { name: "Zalina", link: "https://zalina-ruse.com/", photo: "zalina.png" },
             ],
             achievements:[
                 { name: "Methodics and Informtaion Technology in Education (MITE)", project: "Math Manual", stage: "National", place: "Second", location: "Sofia, Bulgaria", date: "14-02-20" },
@@ -168,19 +169,19 @@ export default{
                 <div class="hidden md:flex justify-start flex-col md:flex-row items-center gap-5">
                     <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
                         <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/raya.thristova22"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-facebook-f"></i></a>
                         </div>
                         <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Facebook</span>
                     </div>
                     <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
                         <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-github"></i>
+                            <a href="https://github.com/thristovaa"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-github"></i></a>
                         </div>
                         <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Github</span>
                     </div>
                     <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
                         <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-linkedin-in"></i>
+                            <a href="https://www.linkedin.com/in/raya-hristova-2a135328a/"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-linkedin-in"></i></a>
                         </div>
                         <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Linkedin</span>
                     </div>
