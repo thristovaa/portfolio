@@ -18,16 +18,15 @@ export default{
             webSkills:[
                 { id: 1, name: "HTML5", percentage: "95", photo: "HTML5.png" },
                 { id: 2, name: "CSS3", percentage: "85", photo: "CSS3.png" },
-                { id: 3, name: "JavaScript", percentage: "65", photo: "JavaScript.png" },
-                { id: 4, name: "C#", percentage: "55", photo: "CSharp.png" },
-                { id: 5, name: "PHP", percentage: "60", photo: "PHP.png" }
-            ],
-            additionalSkills:[
                 { name: "Sass", percentage: "75", photo: "Sass.png" },
                 { name: "Tailwind", percentage: "70", photo: "Tailwind.png" },
                 { name: "Bootstrap", percentage: "70", photo: "Bootstrap.png" },
+                { id: 3, name: "JavaScript", percentage: "65", photo: "JavaScript.png" },
                 { name: "React", percentage: "50", photo: "React.webp" },
                 { name: "Vue", percentage: "50", photo: "Vue.png" },
+                { id: 4, name: "C#", percentage: "55", photo: "CSharp.png" },
+                { id: 5, name: "PHP", percentage: "60", photo: "PHP.png" },
+                { name: "Java", percentage: "40", photo: "Java.webp" },
                 { name: "Wordpress", percentage: "80", photo: "Wordpress.png" },
             ],
             projects:[
@@ -119,13 +118,8 @@ export default{
     <section class="py-16">
         <div class="container mx-auto">
             <h2 class="!text-[2.5rem] md:!text-[3rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Skills</h2>
-            <h3 class="!text-[2rem] md:!text-[2.5rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Web Skills</h3>
             <div class="flex flex-wrap justify-center items-center mb-12 gap-x-24 md:gap-x-10 gap-10">
                 <Skills v-for="item in webSkills" :key="item.key" :percentage="item.percentage" :name="item.name" :photo="item.photo"/>
-            </div>            
-            <h3 class="!text-[2rem] md:!text-[2.5rem] mb-12 text-center font-extrabold text-white text-shadow-glow">Additional Skills</h3>
-            <div class="flex flex-wrap justify-center items-center mb-12 gap-x-24 md:gap-x-10 gap-10">
-                <Skills v-for="item in additionalSkills" :key="item.key" :percentage="item.percentage" :name="item.name" :photo="item.photo"/>
             </div>
         </div>
     </section>
