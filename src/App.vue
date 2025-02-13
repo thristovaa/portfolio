@@ -17,17 +17,17 @@ export default{
         return{
             webSkills:[
                 { id: 1, name: "HTML5", percentage: "95", photo: "HTML5.png" },
-                { id: 2, name: "CSS3", percentage: "85", photo: "CSS3.png" },
+                { id: 2, name: "CSS3", percentage: "90", photo: "CSS3.png" },
                 { name: "Sass", percentage: "75", photo: "Sass.png" },
                 { name: "Tailwind", percentage: "70", photo: "Tailwind.png" },
                 { name: "Bootstrap", percentage: "70", photo: "Bootstrap.png" },
+                { name: "Wordpress", percentage: "85", photo: "Wordpress.png" },
                 { id: 3, name: "JavaScript", percentage: "65", photo: "JavaScript.png" },
                 { name: "React", percentage: "50", photo: "React.webp" },
                 { name: "Vue", percentage: "50", photo: "Vue.png" },
-                { id: 4, name: "C#", percentage: "55", photo: "CSharp.png" },
                 { id: 5, name: "PHP", percentage: "60", photo: "PHP.png" },
+                { id: 4, name: "C#", percentage: "55", photo: "CSharp.png" },
                 { name: "Java", percentage: "40", photo: "Java.webp" },
-                { name: "Wordpress", percentage: "80", photo: "Wordpress.png" },
             ],
             projects:[
                 { name: "Тheatrical Тroupe 'Metafora'", link: "https://studiometafora.com", photo: "studiometafora.png" },
