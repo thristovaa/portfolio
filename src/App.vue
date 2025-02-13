@@ -4,6 +4,7 @@ import Devider from './components/Devider.vue';
 import Skills from './components/Skills.vue';
 import Projects from './components/Projects.vue';
 import Achievements from './components/Achievements.vue';
+import Socials from './components/Socials.vue';
 import {initFlowbite} from 'flowbite';
 
 export default{
@@ -11,7 +12,7 @@ export default{
         initFlowbite()
     },
     components: {
-        Menu, Devider, Skills, Projects, Achievements
+        Menu, Devider, Skills, Projects, Achievements, Socials
     },
     data(){
         return{
@@ -53,6 +54,11 @@ export default{
                 { name: "Mathematics & Projecting (Online)", project: "Sunset Diary", stage: "International", place: "Second", location: "Moscow, Russia", date: "19-05-22" },
                 { name: "Certificate of Recognition from Baba Tonka High School of Mathematics", project: "-", stage: "-", place: "-", location: "Ruse, Bulgaria", date: "22-03-22" },
                 { name: "Competition for IT, Informatics and Digital Arts (Frontend Development category)", project: "Assignment", stage: "National", place: "13th/53", location: "Devin, Bulgaria", date: "03-06-23" }
+            ],
+            socials: [
+                {name: "Facebook", link: "https://www.facebook.com/raya.thristova22", photo: "fa-facebook-f"},
+                {name: "GitHub", link: "https://github.com/thristovaa", photo: "fa-github"},
+                {name: "LinkedIn", link: "https://www.linkedin.com/in/raya-hristova-2a135328a", photo: "fa-linkedin-in"},
             ]
         }
     },
@@ -161,24 +167,7 @@ export default{
                 
                 <!--component-->
                 <div class="hidden md:flex justify-start flex-col md:flex-row items-center gap-5">
-                    <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
-                        <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <a href="https://www.facebook.com/raya.thristova22"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-facebook-f"></i></a>
-                        </div>
-                        <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Facebook</span>
-                    </div>
-                    <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
-                        <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <a href="https://github.com/thristovaa"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-github"></i></a>
-                        </div>
-                        <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Github</span>
-                    </div>
-                    <div class="inline-block h-[60px] w-[60px] overflow-hidden bg-white rounded-[50px] cursor-pointer transition-all duration-300 ease-in-out hover:w-[200px] button">
-                        <div class="inline-block h-[60px] w-[60px] text-center rounded-[50px] box-border leading-[60px] transition-all duration-300 ease-in-out icon">
-                            <a href="https://www.linkedin.com/in/raya-hristova-2a135328a/"><i class="text-[25px] leading-[60px] transition-all duration-300 ease-in-out darker-color-text fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span class="text-[20px] font-semibold leading-[60px] ml-[10px] transition-all duration-300 ease-out">Linkedin</span>
-                    </div>
+                    <Socials v-for="item in socials" :name="item.name" :link="item.link" :photo="item.photo"/>
                 </div>
                 <!--component-->
             </div>
