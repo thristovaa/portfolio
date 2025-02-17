@@ -172,7 +172,7 @@ export default{
                 <!--component-->
             </div>
             <div class='lg:w-1/2 flex justify-center'>
-                Copyright © Raya Hristova, 2023
+                Copyright © Raya Hristova, 2025
             </div>
         </div>
     </section>
